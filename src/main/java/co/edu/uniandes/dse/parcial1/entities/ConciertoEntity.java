@@ -1,5 +1,7 @@
 package co.edu.uniandes.dse.parcial1.entities;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
@@ -13,7 +15,7 @@ public class ConciertoEntity extends BaseEntity {
     private Long presupuesto;
 
     private String nombreArtista;
-    private String fechaConcierto;
+    private LocalDateTime fechaConcierto;
     private int aforoConcierto;
 
     @PodamExclude
