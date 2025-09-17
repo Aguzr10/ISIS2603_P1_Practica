@@ -20,5 +20,5 @@ public class ConciertoEntity extends BaseEntity {
 
     @PodamExclude
     @ManyToOne
-    private EstadioEntity categoria;
+    private EstadioEntity estadio;
 }

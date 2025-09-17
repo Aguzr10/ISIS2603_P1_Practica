@@ -22,5 +22,10 @@ public class EstadioEntity extends BaseEntity {
 
     @PodamExclude
     @OneToMany(mappedBy = "estadio", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ConciertoEntity> modelos = new ArrayList<>();
+    private List<ConciertoEntity> conciertos = new ArrayList<>();
+
+    public static boolean isEmpty() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isEmpty'");
+    }
 }
